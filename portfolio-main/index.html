@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Nandini Kumari Jha — Final year IT Diploma student at Jharsuguda Engineering School, Jharsuguda, Odisha. Java, SQL, Web Developer." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Nandini Kumari Jha — IT Diploma Student & Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__curtain preloader__curtain--a"></div>
+    <div class="preloader__curtain preloader__curtain--b"></div>
+    <div class="preloader__inner">
+      <div class="preloader__logo" data-char-split>NJ</div>
+      <div class="preloader__bar"><span id="preloaderBar"></span></div>
+      <div class="preloader__meta">
+        <span class="preloader__count" id="preloaderCount">0%</span>
+        <span class="preloader__label">loading portfolio</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+    <div class="cursor__label" id="cursorLabel"></div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="progress" id="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo" data-cursor="link">NJ<span class="dot">.</span></a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about" data-cursor="link" class="nav__link"><span class="num">01</span>About</a>
+        <a href="#skills" data-cursor="link" class="nav__link"><span class="num">02</span>Skills</a>
+        <a href="#projects" data-cursor="link" class="nav__link"><span class="num">03</span>Projects</a>
+        <a href="#contact" data-cursor="link" class="nav__link"><span class="num">04</span>Contact</a>
+        <a href="#resume" class="nav__resume" data-cursor="link" data-resume target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button type="button" class="theme-toggle" id="themeToggle" data-cursor="link" aria-label="Toggle dark / light mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2.5 12h2M19.5 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 13.5A8 8 0 0 1 10.5 4 8 8 0 1 0 20 13.5z"/></svg>
+        </button>
+        <button type="button" class="hamburger" id="hamburger" data-cursor="link" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav">
+      <a href="#about" class="mobile-menu__link"><span class="num">01</span>About</a>
+      <a href="#skills" class="mobile-menu__link"><span class="num">02</span>Skills</a>
+      <a href="#projects" class="mobile-menu__link"><span class="num">03</span>Projects</a>
+      <a href="#contact" class="mobile-menu__link"><span class="num">04</span>Contact</a>
+      <a href="https://drive.google.com/file/d/1K5xE6lqfFG7QoJQ88nrf8r-VE870QbTV/view?usp=sharing" class="mobile-menu__link" data-resume="" target="_blank" rel="noopener"><span class="num">05</span>Resume</a>"
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="#" data-cursor="link" class="mobile-menu__social" data-social="github" aria-label="GitHub">GitHub</a>
+      <a href="#" data-cursor="link" class="mobile-menu__social" data-social="linkedin" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__blobs" aria-hidden="true">
+        <span class="blob blob--1" data-depth="30"></span>
+        <span class="blob blob--2" data-depth="-24"></span>
+        <span class="blob blob--3" data-depth="18"></span>
+        <span class="hero__grid"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge" data-reveal="up">
+            <span class="hero__badge-dot"></span>
+            Final-Year IT Diploma Student
+          </span>
+
+          <h1 class="hero__title" data-split>Nandini kumari<br/><span class="grad">Jha</span></h1>
+
+          <p class="hero__type" data-reveal="up">
+            <span class="hero__type-static">I am a</span>
+            <span class="hero__type-rotator" id="rotator"></span><span class="caret"></span>
+          </p>
+
+          <p class="hero__desc" data-reveal="up">
+            Software development enthusiast from Jharsuguda, Odisha. I build clean, practical
+            applications with <strong>html, CSS, JavaScript, Java, SQL</strong> and the modern <strong>web stack</strong>,
+            and I love turning problems into working software.
+          </p>
+
+          <div class="hero__cta" data-reveal="up">
+            <a href="#projects" class="btn btn--primary magnetic" data-cursor="label|VIEW WORK">
+              <span>View My Work</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost magnetic" <a href="https://drive.google.com/file/d/1JSDCFUtsoDaHXmhvghPay13ijcSg9hGi/view?usp=sharing" class="mobile-menu__link" data-resume target="_blank" rel="noopener">flexdata-cursor="label|CONTACT">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <ul class="hero__socials" data-reveal="up">
+            <li><a href="#" data-cursor="label|GITHUB" data-social="github" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.05.77 2.12v3.15c0 .3.2.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></li>
+            <li><a href="#" data-cursor="label|LINKEDIN" data-social="linkedin" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" data-reveal="scale">
+          <div class="terminal" data-tilt data-cursor="link">
+            <div class="terminal__bar">
+              <span class="terminal__lights"><i></i><i></i><i></i></span>
+              <span class="terminal__title">nandini-dev.js</span>
+              <span class="terminal__tag">IT-student</span>
+            </div>
+            <div class="terminal__body" id="terminalBody">
+              <p class="term-line"><span class="tk">const</span> <span class="tv">developer</span> <span class="tk">=</span> {</p>
+              <p class="term-line term-indent-1"><span class="tp">name</span>: <span class="ts">"Nandini Kumari Jha"</span>,</p>
+              <p class="term-line term-indent-1"><span class="tp">role</span>: <span class="ts">"IT Diploma Student"</span>,</p>
+              <p class="term-line term-indent-1"><span class="tp">college</span>: <span class="ts">"JES, Jharsuguda"</span>,</p>
+              <p class="term-line term-indent-1"><span class="tp">skills</span>: [<span class="ts">"Java"</span>, <span class="ts">"SQL"</span>, <span class="ts">"JS"</span>],</p>
+              <p class="term-line term-indent-1"><span class="tp">status</span>: <span class="ts">"Open to work"</span>,</p>
+              <p class="term-line"><span class="tk">}</span>;</p>
+              <p class="term-line term-cursor"><span class="tc">›</span><span class="caret-2"></span></p>
+            </div>
+          </div>
+          <div class="hero__float-card float-card--top" data-depth="20">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg></span>
+            <div><strong>8+</strong><small>skills mastered</small></div>
+          </div>
+          <div class="hero__float-card float-card--bottom" data-depth="-16">
+            <span class="fc-icon fc-icon--alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></span>
+            <div><strong>Jharsuguda</strong><small>Odisha, India</small></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" data-cursor="link" aria-label="Scroll to about">
+        <span>scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group" id="marqueeGroupA"></div>
+        <div class="marquee__group" id="marqueeGroupB" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="section-head__index">01</span>
+          <h2 class="section-head__title">About <span class="grad">Me</span></h2>
+          <p class="section-head__desc">A final-year IT diploma student turning curiosity into code.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__photo" data-reveal="scale" data-cursor="link">
+            <div class="about__photo-frame">
+              <img src="nandini.png" alt="Nandini Kumari Jha" id="profileImg"
+                   onload="this.classList.add('is-loaded')"
+                   onerror="this.style.display='none';document.getElementById('profileFallback').style.display='flex'" />
+              <span class="about__photo-fallback" id="profileFallback">Nj</span>
+              <span class="about__photo-ring"></span>
+              <span class="about__photo-badge"><i></i>Open to internships and entrylavel role</span>
+            </div>
+          </div>
+
+          <div class="about__text" data-reveal="left">
+            <p>
+              Hello! I'm <strong>Nandini Kumari Jha</strong>, an IT diploma student in my final year at
+              <strong>Jharsuguda Engineering School</strong>, Jharsuguda, Odisha. My journey started with a
+              passion for how software shapes the world — and it has grown into a drive to build
+              applications that are simple, useful and well-crafted.
+            </p>
+            <p>
+              I work comfortably with <strong>JavaScript, Java, SQL</strong> and the <strong>web fundamentals</strong>
+              (HTML, CSS, JavaScript), and I bring strong <strong>teamwork</strong> and
+              <strong>critical-thinking</strong> skills to every project. I'm currently open to internships,
+              entry-level roles and collaborative projects where I can contribute and keep growing.
+            </p>
+
+            <div class="about__facts">
+              <div class="fact" data-reveal="up">
+                <span class="fact__label">Name</span>
+                <span class="fact__value">Nandini Kumari Jha</span>
+              </div>
+              <div class="fact" data-reveal="up">
+                <span class="fact__label">Degree</span>
+                <span class="fact__value">Diploma in IT (Final Year)</span>
+              </div>
+              <div class="fact" data-reveal="up">
+                <span class="fact__label">College</span>
+                <span class="fact__value">JES, Jharsuguda, Odisha</span>
+              </div>
+              <div class="fact" data-reveal="up">
+                <span class="fact__label">Languages</span>
+                <span class="fact__value">Hindi · Odia · English</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__timeline" data-reveal="right">
+            <h3 class="about__timeline-title">Education Path</h3>
+            <ol class="timeline" id="timeline"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="section-head__index">02</span>
+          <h2 class="section-head__title">My <span class="grad">Skills</span></h2>
+          <p class="section-head__desc">Tools and strengths I bring to every team and project.</p>
+        </div>
+
+        <div class="skills__grid">
+          <div class="skills__bars" id="skillBars"></div>
+
+          <div class="skills__soft" data-reveal="right">
+            <h3 class="skills__soft-title">Beyond the Code</h3>
+            <div class="chips" id="softChips"></div>
+            <div class="skills__quote" data-reveal="up">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 7H6a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h3a3 3 0 0 0 3-3v-4h-4V8.5h2V7zm11 0h-4a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h3a3 3 0 0 0 3-3v-4h-4V8.5h2V7z"/></svg>
+              <p>"Great software is built by people who communicate, question and care about the details — not just by code."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats" id="stats"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="section-head__index">03</span>
+          <h2 class="section-head__title">Featured <span class="grad">Projects</span></h2>
+          <p class="section-head__desc">Things I've designed and built during my diploma journey.</p>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid"></div>
+
+        <p class="projects__note" id="projectsNote" data-reveal="up">Loading repositories from GitHub…</p>
+
+        <div class="projects__more" data-reveal="up">
+          <a href="#" class="btn btn--ghost magnetic" data-cursor="label|MORE" data-social="github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.05.77 2.12v3.15c0 .3.2.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            <span>View more on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head" data-reveal="up">
+          <span class="section-head__index">04</span>
+          <h2 class="section-head__title">Let's <span class="grad">Connect</span></h2>
+          <p class="section-head__desc">Have an opportunity, a project, or just want to say hi? My inbox is open.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info" data-reveal="left">
+            <div class="contact__card" data-reveal="up" data-cursor="link">
+              <span class="contact__card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span>
+              <div>
+                <span class="contact__card-label">Email</span>
+                <a href="mailto:nandinijha8763@gmail.com" id="emailLink">nandinijha8763@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact__card" data-reveal="up">
+              <span class="contact__card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div>
+                <span class="contact__card-label">Location</span>
+                <span class="contact__card-value">Jharsuguda, Odisha, India</span>
+              </div>
+            </div>
+            <div class="contact__card" data-reveal="up" data-cursor="link">
+              <span class="contact__card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+              <div>
+                <span class="contact__card-label">Status</span>
+                <span class="contact__card-value status-on">Open to internships & roles</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" data-reveal="right" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Your Name</label>
+                <input type="text" id="f-name" name="name" placeholder="enter your name" required />
+              </div>
+              <div class="field">
+                <label for="f-email">Your Email</label>
+                <input type="email" id="f-email" name="email" placeholder="your@example.com" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-subject">Subject</label>
+              <input type="text" id="f-subject" name="subject" placeholder="Internship & opportunity" required />
+            </div>
+            <div class="field">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block magnetic" data-cursor="label|SEND">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="contact__form-note">This opens your email app with the message pre-filled.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="footer__logo" data-cursor="link">NJ<span class="dot">.</span></a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#about" data-cursor="link">About</a>
+        <a href="#skills" data-cursor="link">Skills</a>
+        <a href="#projects" data-cursor="link">Projects</a>
+        <a href="#contact" data-cursor="link">Contact</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="#" data-cursor="link" data-social="github" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.66.41.35.77 1.05.77 2.12v3.15c0 .3.2.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+        <a href="#" data-cursor="link" data-social="linkedin" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Nandini Kumari Jha</span>
+      <span>Designed & built with HTML · CSS · JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
